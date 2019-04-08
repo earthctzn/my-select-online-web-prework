@@ -7,7 +7,7 @@ def my_select(collection)
     if truthiness == true
       new_a << value
   end
-    i+=1
+    count+=1
   end
   new_a
 end
