@@ -1,18 +1,18 @@
 def my_select(collection)
-  array_even = []
-  i = 0
-  while i < collection.length
-    passed_value = collection[i]
-    true_false = yield collection[i]
-    if true_false == true
-      array_even << passed_value
+  new_a = []
+  count = 0
+  while count < collection.length
+    value = collection[count]
+    truthiness = yield collection[count]
+    if truthiness == true
+      new_a << value
   end
     i+=1
   end
-  array_even
+  new_a
 end
 
-even_array = []
+new_a = []
 my_select([1, 2, 3, 4, 5]) do |num|
    num.even?
 end
