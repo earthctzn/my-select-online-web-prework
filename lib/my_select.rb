@@ -9,5 +9,4 @@ def my_select(c)
     count += 1
       end
     return new_a
-  end
 end
